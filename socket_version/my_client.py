@@ -22,6 +22,7 @@ while True:
     frame_data = data[:msg_size]
     data = data[msg_size:]
     json_data = pickle.loads(frame_data)
+    print(json_data)
     # print(type(json_data), json_data)
     frame = json_data['frame']
     cv2.imshow("RECEIVING VIDEO", frame)
